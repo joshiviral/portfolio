@@ -3,6 +3,22 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+
+<?php
+
+if(isset($_POST ['submit']))
+{
+$msg = 'Name: ' .$_POST['name'] ."\n"
+.'Email: ' .$_POST['email'] ."\n"
+.'Comments: ' .$_POST['comments'];
+
+mail('viraljoshi357814@gmail.com','Sample Contact Us Form',$msg);
+}
+else
+{
+header('location : index.html');
+exit(0);
+ ?>
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -18,7 +34,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
 <!-- /css files -->
-<!-- font links -->
+<!-- font links -->	
 <link href='//fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Cinzel:400,700,900' rel='stylesheet' type='text/css'>
 <!-- /font links -->	
@@ -27,7 +43,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- /js files -->
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-<form id="myForm" action="home.php" method="POST">
+<form id="myForm" action="#" method="POST">
  <div class="navbar-wrapper">
       <div class="container">
 
@@ -271,7 +287,7 @@ as well as developed web applications for final year project in ASP.NET and C#.<
 <!-- footer -->	
 <div class="contact-me" id="contact">
 	<h3 class="text-center slideanim">Contact Me</h3>
-	<p class="text-center slideanim">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	<p class="text-center slideanim">Ready to lead you in the future of Mobile Marketing</p>
 	<div class="container">
 	<footer>
 		<div class="row">
