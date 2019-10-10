@@ -4,21 +4,6 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 
-<?php
-
-if(isset($_POST ['submit']))
-{
-$msg = 'Name: ' .$_POST['name'] ."\n"
-.'Email: ' .$_POST['email'] ."\n"
-.'Comments: ' .$_POST['comments'];
-
-mail('viraljoshi357814@gmail.com','Sample Contact Us Form',$msg);
-}
-else
-{
-header('location : index.html');
-exit(0);
- ?>
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -43,7 +28,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- /js files -->
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-<form id="myForm" action="#" method="POST">
+<form id="myForm" action="home.php" method="POST">
  <div class="navbar-wrapper">
       <div class="container">
 
@@ -83,10 +68,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p>Believe in Yourself!!</p>
 				<span class="line2"></span>
 				<div class="social-icons">
-					<a href="#"><span class="facebook"></span></a>
-					<a href="#"><span class="twitter"></span></a>
-					<a href="#"><span class="linkedin"></span></a>
-					<a href="#"><span class="github"></span></a>
+					<a href="https://www.facebook.com/viral.joshi.735"><span class="facebook"></span></a>
+					<a href="https://twitter.com/ViralJoshi6"><span class="twitter"></span></a>
+					<a href="https://www.linkedin.com/in/viral-joshi-784590191/"><span class="linkedin"></span></a>
+					<a href="https://github.com/joshiviral"><span class="github"></span></a>
 				</div>
 			</div>	
 		</li>
@@ -97,10 +82,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p>Eat Sleep Code Repeat!!</p>
 				<span class="line2"></span>
 				<div class="social-icons">
-					<a href="#"><span class="facebook"></span></a>
-					<a href="#"><span class="twitter"></span></a>
-					<a href="#"><span class="linkedin"></span></a>
-					<a href="#"><span class="github"></span></a>
+					<a href="https://www.facebook.com/viral.joshi.735"><span class="facebook"></span></a>
+					<a href="https://twitter.com/ViralJoshi6"><span class="twitter"></span></a>
+					<a href="https://www.linkedin.com/in/viral-joshi-784590191/"><span class="linkedin"></span></a>
+					<a href="https://github.com/joshiviral"><span class="github"></span></a>
 					
 				</div>
 			</div>
@@ -112,10 +97,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p>Beyond your Comfort Zone!!</p>
 				<span class="line2"></span>
 				<div class="social-icons">
-					<a href="#"><span class="facebook"></span></a>
-					<a href="#"><span class="twitter"></span></a>
-					<a href="#"><span class="linkedin"></span></a>
-					<a href="#"><span class="github"></span></a>
+					<a href="https://www.facebook.com/viral.joshi.735"><span class="facebook"></span></a>
+					<a href="https://twitter.com/ViralJoshi6"><span class="twitter"></span></a>
+					<a href="https://www.linkedin.com/in/viral-joshi-784590191/"><span class="linkedin"></span></a>
+					<a href="https://github.com/joshiviral"><span class="github"></span></a>
 					
 				</div>
 			</div>
@@ -136,7 +121,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="social-icons">
 						<a href="https://www.facebook.com/viral.joshi.735"><span class="facebook"></span></a>
 						<a href="https://twitter.com/ViralJoshi6"><span class="twitter"></span></a>	
-						<a href="#"><span class="linkedin"></span></a>						
+						<a href="https://www.linkedin.com/in/viral-joshi-784590191/"><span class="linkedin"></span></a>						
 						<a href="https://github.com/joshiviral"><span class="github"></span></a>	
 					</div>
 				</div>
@@ -293,8 +278,7 @@ as well as developed web applications for final year project in ASP.NET and C#.<
 		<div class="row">
 			<div class="col-md-6 slideanim">
 				<div class="contact-details">
-					<form action="#" method="post">
-						<div class="row">
+							<div class="row">
 							<div class="col-sm-12 form-group">
 								<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
 							</div>
@@ -308,8 +292,7 @@ as well as developed web applications for final year project in ASP.NET and C#.<
 								<input class="btn btn-default btn-lg" type="submit" value="Submit">
 							</div>
 						</div>
-					</form>	
-				</div>	
+					</div>	
 			</div>	
 			<div class="col-md-6 slideanim">
 				<div class="contact-info">
